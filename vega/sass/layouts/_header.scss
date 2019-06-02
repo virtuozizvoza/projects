@@ -1,0 +1,84 @@
+.header { 
+    background-blend-mode: multiply;
+    background-image: -webkit-gradient(linear,  from(rgba($color-blue, 0.61)), to(rgba($color-tirquoise, 0.71))), url("/img/header.jpg");
+    background-image: linear-gradient(to right bottom, rgba($color-blue, 0.71), rgba($color-tirquoise, 0.81)), url("/img/header.jpg");
+    background-position: center;
+    height: 95vh;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 1rem;
+    position: relative;
+    z-index: 10;
+
+    clip-path: circle(60.0% at 50% 45%);
+}
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-40%, -30%);
+    width: 35%;
+    
+}
+.user { 
+    background-color: $color-white;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    transform: translate(-5%, -10%);
+    height: 5.5rem;
+    width: auto;
+    display: inline-block;
+    padding: 1rem;
+    clip-path: circle(63.5% at 51% 50%);
+
+    &-search { 
+    @include text-style($color-grey);
+    letter-spacing: 1px;
+    display: inline-block;
+        
+        &:last-child {
+            margin-right: 3px;
+        }
+
+        &-1 img { padding-right: 3px;
+            width: 20%;
+            height: 25%;
+            background-color: $color-white;
+        }
+
+        &:link, 
+        &:visited {  
+            text-decoration: none;
+            padding-bottom: 1.4rem;
+            border-bottom: 3px solid transparent;
+            -webkit-transition: all 0,2s;
+            transition: all 0,2s;
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 3px solid $color-primary; 
+            border-radius: 1rem;
+        }
+    }    
+
+    &-new {
+        color: $color-primary;
+        text-decoration: none;
+        background-color: $color-white;
+    }
+}
+
+.logo {
+    height: 2.5rem;
+    float: left;
+    border-radius: .8rem;  
+    padding-right: 2px;
+    line-height: 1;
+    &-box {
+        display: inline-block;
+    }
+}
+
+

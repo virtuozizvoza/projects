@@ -1,0 +1,21 @@
+@mixin clearfix {
+    &::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin text-style($color) {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: $color;
+}
+
+@mixin text-positioning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

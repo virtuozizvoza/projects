@@ -1,0 +1,71 @@
+.tour {
+    background-color: $color-white;
+    margin: 1.5rem 10rem;
+    padding: 1.5rem 2.5rem;
+    width: 52%;
+    height: 7rem;
+    position: relative;
+    display: inline-block;
+    clip-path: circle(65.5% at 50% 50%);
+
+    &-1 {clip-path: circle(66.5% at 50% 50%);
+        width: 67%;
+        height: 8.5rem;
+    }
+    &-small {
+        padding-top: .5rem;
+    }
+    &-small, &-big {
+        float: left;
+        padding-right: 3rem;
+        padding-left: 1rem;
+    }
+    &-info {
+        float: left;
+    }
+    &-dot {
+        position: absolute;
+        top: 15%;
+        right: 23%;
+        transform: translate(-15%, -23%); 
+       
+        &-1 {
+            border-radius: 50%;
+            display: block;  
+            background-color: $color-spot;
+            margin: 1rem 2rem;
+            height: 0.5rem;
+            width: 0.5rem;
+
+            &-big {
+                height: 0.8rem;
+                width: 0.8rem;
+            }
+        }
+      }
+    &-price {
+        position: absolute;
+            top: 15%;
+            right: 5%;
+            transform: translate(-15%, -5%);
+            text-align: center;
+
+        &-sm {
+            top: 30%;
+        }
+        &-value {
+            color: $color-yellow;
+            font-weight: 700;
+            font-size: 2.5rem;
+            padding-bottom: 0.5rem;
+
+            &-big {
+                font-size: 3rem;
+            }
+        }
+        &-btn {
+            margin-top: 0;
+        }
+
+    }
+}

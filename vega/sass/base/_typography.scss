@@ -1,0 +1,91 @@
+.heading1 {
+    color: $color-white;
+    margin-bottom: 2.5rem;
+
+    &-main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    padding-bottom: 1.5rem;
+    }
+    &-sub {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    animation: moveInRight 1s ease-out;
+    }  
+}     
+.heading2 {
+    color: $color-green-dark;
+    position: relative;
+
+    &-main {
+        top: 0;
+        left: 0;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        color: rgba($color-green-dark, 0.2);
+    }
+    &-sub {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        font-size: 2rem;
+        font-weight: 700;
+        z-index: 100;
+        letter-spacing: .2rem;
+    }
+}
+.paragraph {
+    padding-bottom: 1.5rem;
+    text-align: justify;
+
+    &-white {
+        color: $color-white;
+        text-align: justify;
+    }
+}
+.paragraph1 {
+    color: rgba($color-grey-light, 0.5);
+    text-align: justify;
+    
+    &:last-child {
+        padding-left: 5.9rem;
+    }
+    &-big {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+.heading3 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: $color-white;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+
+    &-dark {
+        color: $color-grey-dark;
+    }
+}
+.heading4 {
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    letter-spacing: .1rem;
+    color: $color-grey-dark;
+
+    &-white {
+        color: $color-white;
+    }
+    
+    &-big {
+        font-size: 2rem;
+    }
+}

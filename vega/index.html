@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="/fonts/Montserrat-Regular.ttf">
+        <link rel="stylesheet" href="/fonts/Montserrat-Medium.ttf">
+        <link rel="stylesheet" href="/fonts/Montserrat-Bold.ttf">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link type="text/css" rel="stylesheet" href="css/travel.css"> 
+
+        <title>Travel site</title>
+    </head>
+
+    <body>
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation-checkbox" id="navi-toogle">
+            <label for="navi-toogle" class="navigation-btn">
+                <span class="navigation-icon">&nbsp;</span>
+            </label>
+            <div class="navigation-background">&nbsp;</div>
+            <nav class="navigation-nav">
+                <ul class="navigation-list">
+                        <li class="navigation-item navigation-item-a"><a href="#explore" class="navigation-link">Home</a></li>
+                        <li class="navigation-item"><a href="#tours" class="navigation-link">Discover</a></li>  
+                        <li class="navigation-item"><a href="#" class="navigation-link">About us</a></li>  
+                        <li class="navigation-item"><a href="#" class="navigation-link">Contact</a></li>  
+                        <li class="navigation-item"><a href="#" class="navigation-link">Help</a></li>    
+                </ul>  
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="user"> 
+                <div class="logo-box">
+                    <img src="img/logo.png" alt="Logo" class="logo"> 
+                </div>   
+                <span><a href="#" class="user-search user-search-1"><img src="/img/search.png" alt="search">Sign up</a></span>
+                <span><a href="#" class="user-search">Login</a></span>          
+                <select class="user-new">
+                    <option value="EN">EN</option>
+                    <option value="SR">SR</option>
+                </select>
+            </div>       
+            <div class="text-box">
+                <h1 class="heading1">
+                    <span class="heading1-main">Experience the world</span> 
+                    <span class="heading1-sub">Where people are friendly and full of love. Where strangers in the night become lovers or best friends. Explore the beauty of the outside and the inside of beautiful places and people.</span>
+                </h1>
+                <a href="#" class="btn btn-orange btn-animated">Explore all</a>
+                <a href="#" class="btn btn-white btn-animated"><span class="btn-white-original"><img src="img/play3.png" alt="play3" class="btn-white-play"></span>Watch storie</a>    
+            </div>  
+        </header>
+
+        <main>
+            <section class="section-explore" id="explore">
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <h2 class="heading2 u-margin-bottom-medium">
+                            <span class="heading2-main">Explore</span>
+                            <span class="heading2-sub">Most popular destinations</span>
+                         </h2>
+                         <p class="paragraph">
+                                Beauty is all around us. If you stop to look around, you can see beauty in almost anything. There are some places in the world that are considered the MOST beautiful. These are the kinds of places where you can sit and just stare for hours. Here’s a gallery of some places with stunning views around the world. 
+                         </p>
+                         <a href="#" class="btn btn-orange btn-animated">Explore all</a>
+                    </div>     
+                    <div class="col-2-of-3">
+                        <div class="slideshow-container">
+                            <div class="slideshow">
+                                <div class="photo fade" onclick="currentDiv(1)">
+                                    <span class="box">
+                                        <img src="img/novisad.jpg" alt="novi-sad" class="photo-1">
+                                        <h3 class="box-city">Novi Sad, Serbia</h3>
+                                    </span> 
+                                </div>     
+                                <div class="photo fade" onclick="currentDiv(1)">
+                                    <span class="box">
+                                        <img src="img/amsterdam.jpg" alt="amsterdam" class="photo-2">
+                                        <h3 class="box-city">Amsterdam, Nederlands</h3>
+                                    </span> 
+                                </div>
+                                <div class="photo fade" onclick="currentDiv(1)">
+                                    <span class="box">
+                                        <img src="img/bahamas.jpg" alt="bahamas" class="photo-3">
+                                        <h3 class="box-city-3">The Bahamas</h3>
+                                    </span>       
+                                </div>                          
+                            </div> 
+                                <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>                                       
+                        </div>
+                    </div>
+                </div>       
+            </section>
+            <section class="section-tours" id="tours">
+                <h3 class="heading3 u-margin-bottom-big ">Available summer tours</h3>
+                <div class="tour tour-1">
+                    <img class="tour-big" src="img/bus.jpg">
+                    <div class="info">
+                        <h4 class="heading4 heading4-big">City hiking tour (3 hours)</h4>
+                        <p class="paragraph1 paragraph1-big">Get onboard one of our round city cable car tour</p>
+                    </div>
+                    <div class="tour-dot">
+                        <span class="tour-dot-1 tour-dot-1-big"></span>
+                        <span class="tour-dot-1 tour-dot-1-big"></span>
+                        <span class="tour-dot-1 tour-dot-1-big"></span>
+                        <span class="tour-dot-1 tour-dot-1-big"></span>
+                        <span class="tour-dot-1 tour-dot-1-big"></span>
+                    </div>    
+                    <div class="tour-price">
+                        <p class="tour-price-value tour-price-value-big">$ 45.00</p>
+                        <a href="#" class="btn btn-blue tour-price-btn">Book</a>
+                    </div>
+                </div>
+                <div class="tour">
+                    <img class="tour-small" src="img/trolebus.jpg">
+                    <div class="info">
+                        <h4 class="heading4">City cable car tour (2 hours)</h4>
+                        <p class="paragraph1">Get onboard one of our round city cable car tour</p>
+                    </div>
+                    <div class="tour-dot">
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                    </div>    
+                    <div class="tour-price tour-price-sm">
+                        <p class="tour-price-value">$ 85.00</p>
+                    </div>
+                </div>
+                <div class="tour">
+                    <img class="tour-small" src="img/cikica.jpg">
+                    <div class="info">
+                        <h4 class="heading4">City hiking tour (1.5 hours)</h4>
+                        <p class="paragraph1">Get onboard one of our round city cable car tour</p>
+                    </div>
+                    <div class="tour-dot">
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                    </div>    
+                    <div class="tour-price tour-price-sm">
+                        <p class="tour-price-value">$ 45.00</p>
+                    </div>
+                </div>
+                <div class="tour">
+                    <img class="tour-small" src="img/mapa.jpg">
+                    <div class="info">
+                        <h4 class="heading4">City hiking tour (3 hours)</h4>
+                        <p class="paragraph1">Get onboard one of our round city cable car tour</p>
+                    </div>
+                    <div class="tour-dot">
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                        <span class="tour-dot-1"></span>
+                    </div>    
+                    <div class="tour-price tour-price-sm">
+                        <p class="tour-price-value">$ 45.00</p>
+                    </div>
+                </div>     
+            </section>
+            <section class="section-discovery">
+                <h3 class="heading3 heading3-dark u-margin-bottom-big">Traveling is easy</h3>
+                <div class="row">
+                    <div class="card">
+                    <div class="col-1-of-2">
+                        <div class="card-left">
+                            <h3 class="heading3 u-margin-bottom-medium">All services in one round</h3>
+                            <h4 class="heading4 heading4-white">Travel on beaches</h4>
+                            <p class="paragraph paragraph-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum error in facere dolor? Eius perspiciatis modi nobis nam architecto ex dolorem repellat velit, nulla ullam voluptas, possimus similique, nostrum excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet ex expedita itaque perferendis iure consequatur velit sint? Soluta molestias ad magnam dicta veritatis repellat odio aperiam, hic a obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt sunt officiis ab, quis doloremque amet minima inventore voluptate, quidem hic? Minus repudiandae et tenetur quas reiciendis, iusto placeat velit!</p>
+                            <a href="#" class="btn btn-orange">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="card-right">
+                            <h3 class="heading4 u-center-text u-margin-bottom-small">Discover popular places</h3>
+                            <span class="box-2">
+                                <img src="img/brazil.jpg" alt="brazil" class="box-2-img">
+                                <h3 class="box-2-country">Brazil</h3>
+                            </span> 
+                            <span class="box-2">
+                                <img src="img/china.jpg" alt="china" class="box-2-img" >
+                                <h3 class="box-2-country">China</h3>
+                            </span> 
+                            <span class="box-2">
+                                <img src="img/thailand.jpg" alt="thailand" class="box-2-img">
+                                <h3 class="box-2-country">Thailand</h3>
+                            </span> 
+                            <span class="box-2">
+                                <img src="img/turkey.jpg" alt="turkey" class="box-2-img">
+                                <h3 class="box-2-country">Turkey</h3>
+                            </span> 
+                            <span class="box-2">
+                                <img src="img/russia.jpg" alt="russia" class="box-2-img">
+                                <h3 class="box-2-country">Russia</h3>
+                            </span> 
+                        </div>
+                    </div>    
+                    </div>
+                </div>    
+            </section>
+            <section class="section-about">
+                <h3 class="heading3 heading3-dark u-margin-bottom-big ">Travel the world with us</h3>
+                <div class="about">
+                    <h4 class="heading4 u-margin-bottom-small">I am page heading</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio, sequi error repudiandae incidunt laborum necessitatibus reprehenderit. Supro af jigaiafhaifwehfseihcnasniff aifhad aihf iha hadhf afn asdkf jasfkasf. Duis vle au uta utai ua itua otaio ai uaoi a atioaufa fuawfuuf afua giu agij klgajsga jfak. Amet, architecto neque? Vero, laudantium inventore! Quia, quam ad beatae temporibus molestiae ipsum. Check it <span class="text"><a href="#">here</a></span>.</p>
+                    <ul>
+                        <li>Duis vle au uta utai ua itua otaio ai uaoi a atioaufa fuawfuuf afua giu agij klgajsga jfak.</li>
+                        <li>Supro af jigaiafhaifwehfseihcnasniff aifhad aihf iha hadhf afn asdkf jasfkasf. Duis vle au uta utai ua itua otaio ai uaoi a atioaufa fuawfuuf afua giu agij klgajsga jfak.</li>
+                        <li>Dup eifpafia ha ha. Duis vle au uta utai ua itua otaio ai uaoi a atioaufa fuawfuuf afua giu agij klgajsga jfak.</li>
+                    </ul>
+                </div>
+                <div class="about">
+                        <h4 class="heading4 u-margin-bottom-small u-margin-top-small">I am page subheading</h4>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio, sequi error repudiandae incidunt laborum necessitatibus reprehenderit. Amet, architecto neque? Vero, laudantium inventore! Quia, quam ad beatae temporibus molestiae ipsum.</p>
+                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio, sequi error repudiandae incidunt laborum necessitatibus reprehenderit. Amet, architecto neque? Vero, laudantium inventore! Quia, quam ad beatae temporibus molestiae ipsum. Check it <span class="text"><a href="#">here</a></span>.</p>
+                    </div>
+            </section>
+            <section class="section-contact">
+                <h3 class="heading3 heading3-dark u-margin-bottom-big ">Contact us</h3>
+                <img src="img/kancelarija.jpg" alt="office" class="office">
+                <div class="contact">
+                    <form action="#" class="form"></form>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full name</label>
+                            <input type="text" class="form-input" placeholder="Full name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-input" placeholder="Email address" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="text" class="form-label">Message</label>
+                            <input type="text" class="form-input form-input-big" placeholder="Your message">
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" class="form-check" id="large"> </span>
+                            <label for="large" class="form-check-label">
+                                    <span class="form-checkbox-1"></span>      
+                            </label>
+                            I agree to the <span class="text"><a href="#">Terms</a></span>,<span class="text"><a href="#"> Privacy Policy</a></span> and <span class="text"> <a href="#">Fees</a></span>
+                        </div>
+                        <div class="form-btn">
+                            <a href="#" class="btn btn-orange">Send message</a>
+                        </div>
+                </div>
+                
+            </section>
+
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/js/world.js"></script>
+    </body>
+</html>

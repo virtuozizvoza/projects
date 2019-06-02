@@ -1,0 +1,39 @@
+.section-explore {
+    background-color: rgba($color-white, 0.6);
+    background-size: cover;
+    position: relative;
+    clip-path: circle(56% at 50% 48%);
+    margin-top: -2.5vh;
+    height: auto;
+    padding: 7rem 12rem;
+}
+.section-tours {
+    padding: 7rem 0;
+    background-color: $color-tirquoise;
+    background-image: url(/img/putnici.jpg);
+    background-position: 80% 70%;
+    background-repeat: no-repeat;
+    clip-path: circle(58.5% at 50% 50%);
+}
+.section-discovery {
+    background-color: rgba($color-white, 0.7);
+    position: relative;
+    padding: 7rem 0;
+    clip-path: circle(58.5% at 50% 50%);
+}
+.section-about {
+    background-color: rgba($color-white, 0.5);
+    position: relative;
+    padding: 7rem 0;
+    clip-path: circle(57.5% at 50% 50%);
+}
+.section-contact {
+    background-color: $color-white;
+    padding: 7rem 0;
+    clip-path: circle(56.5% at 50% 50%);
+    position: relative;
+}
+.contact {
+    float: right;
+    margin-right: 12rem;
+}
