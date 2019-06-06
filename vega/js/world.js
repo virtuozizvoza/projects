@@ -8,16 +8,16 @@ $(document).ready(function(){
 	$('.btn-white-play').attr('src','/img/play3.png');
    });
 
-  $ (".navigation-list").on("click", function(event){
+  /*$ (".navigation-list").on("click", function(event){
       $(".navigation-nav").hide();
      $("#navi-toogle").removeClass(); 
       $("navigation-nav").show();
-   });
+   });*/
 
 });
 
 
-/*var slideIndex = 1;
+var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -34,4 +34,4 @@ function showSlides(n) {
       slides[i].style.display = "none"; 
   }
   slides[slideIndex-1].style.display = "block"; 
-}*/
+}
