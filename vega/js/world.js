@@ -21,7 +21,7 @@ var slides = ["fade-1", "fade-2", "fade-3"];
 var showSlides = ["fade-1", "fade-2"];
 
 function slideshow(showSlides) {
-  for(var i = showSlides; i < slides.length; i++ ) {
+  for(var i = [0, 1]; i < slides.length; i++ ) {
     document.getElementsByClassName("photo").style.display = "inline-block";
   }
 }
