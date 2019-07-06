@@ -71,19 +71,19 @@
                     <div class="col-2-of-3">
                         <div class="slideshow-container">
                             <div class="slideshow">
-                                <div class="photo fade" onclick="currentDiv(1)">
+                                <div class="photo fade-1" onclick="currentDiv(1)">
                                     <span class="box">
                                         <img src="img/novisad.jpg" alt="novi-sad" class="photo-1">
                                         <h3 class="box-city">Novi Sad, Serbia</h3>
                                     </span> 
                                 </div>     
-                                <div class="photo fade" onclick="currentDiv(1)">
+                                <div class="photo fade-2" onclick="currentDiv(1)">
                                     <span class="box">
                                         <img src="img/amsterdam.jpg" alt="amsterdam" class="photo-2">
                                         <h3 class="box-city">Amsterdam, Nederlands</h3>
                                     </span> 
                                 </div>
-                                <div class="photo fade" onclick="currentDiv(1)">
+                                <div class="photo fade-3" onclick="currentDiv(1)">
                                     <span class="box">
                                         <img src="img/bahamas.jpg" alt="bahamas" class="photo-3">
                                         <h3 class="box-city box-city-3">The Bahamas</h3>
@@ -243,11 +243,10 @@
                             <input type="text" class="form-input form-input-big" placeholder="Your message">
                         </div>
                         <div class="form-checkbox">
-                            <label  class="form-check-label">
+                            <label  class="form-check-label"> I agree to the <span class="text"><a href="#">Terms</a></span>,<span class="text"><a href="#"> Privacy Policy</a></span> and <span class="text"> <a href="#">Fees</a></span>
                                 <input type="checkbox" class="form-check">
                                 <span class="form-checkbox-1"></span>      
                             </label>
-                            I agree to the <span class="text"><a href="#">Terms</a></span>,<span class="text"><a href="#"> Privacy Policy</a></span> and <span class="text"> <a href="#">Fees</a></span>
                         </div>
                         <div class="form-btn">
                             <a href="#" class="btn btn-orange">Send message</a>
@@ -256,17 +255,17 @@
             </section>
 
             <footer class="footer">
-                <div class="row">
-                    <div class="col-1-of-3">   
+                <div class="container">
+                    <div class="item">   
                         <div class="logo-2">
                             <img src="/img/logo-white.jpg" alt="logo-white" class="footer-logo-white">
                             <p class="paragraph-white">Industry leading travel app</p>
                             <p class="paragraph-white">Made in Novi Sad <br>Serbia, SRB</p>
                         </div>
                     </div>
-                    <div class="col-2-of-3">
-                    <div class="row">
-                        <div class="col-1-of-3">
+                   <!--  <div class="item">
+                   <div class="container">-->
+                        <div class="item">
                             <div class="footer-menu">
                                 <h4 class="heading4 heading4-white heading4-foot">Feautures</h4>
                                 <ul>
@@ -277,7 +276,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-1-of-3">
+                        <div class="item">
                             <div class="footer-menu">
                                 <h4 class="heading4 heading4-white heading4-foot">About</h4>
                                 <ul>
@@ -288,7 +287,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-1-of-3">        
+                        <div class="item item-2">        
                             <div class="footer-menu">
                                 <h4 class="heading4 heading4-white heading4-foot">Free Tools</h4>
                                 <ul>
@@ -298,7 +297,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>   
+                   <!-- </div>   -->
                     </div> 
                 </div>
                 <div class="footer-built">    
@@ -307,9 +306,9 @@
                     </div>
                     <div class="footer-built-links">
                         <ul class="footer-social">
-                            <li><a href="#" class="footer-net"><img src="img/face.png" alt="facebook"></a> </li>
-                            <li><a href="#" class="footer-net"><img src="img/instagram.png" alt="instagram"></a></li>
-                            <li><a href="#" class="footer-net"><img src="img/twiter.png" alt="twiter"></a></li>
+                            <li><a href="#" ><img src="img/face.png" alt="facebook" class="footer-net"></a> </li>
+                            <li><a href="#" ><img src="img/instagram.png" alt="instagram" class="footer-net"></a></li>
+                            <li><a href="#" ><img src="img/twiter.png" alt="twiter" class="footer-net"></a></li>
                         </ul>
                     </div>
                 </div>
