@@ -1,0 +1,193 @@
+.card {
+    -webkit-perspective: 150rem;
+            perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 38rem;
+    
+    &-side{
+        height: 38rem;
+        width: 100%;
+        -webkit-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        -webkit-box-shadow: $box-shadow-big;
+                box-shadow: $box-shadow-big;
+
+        &-front {
+            background-color: $color-white;
+        }
+        &-back {    
+            -webkit-transform: rotateY(180deg);    
+                    transform: rotateY(180deg);
+
+            &-yellow {
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-sec-light), to($color-sec-dark));
+                background-image: linear-gradient(to right bottom, $color-sec-light, $color-sec-dark);
+            }
+            &-green {
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-light), to($color-dark));
+                background-image: linear-gradient(to right bottom, $color-light, $color-dark);
+            }
+            &-blue {
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-ter-light), to($color-ter-dark));
+                background-image: linear-gradient(to right bottom, $color-ter-light, $color-ter-dark);
+            }
+        }
+
+    }
+    &:hover &-side-front {
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+    }
+    &:hover &-side-back {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+    }
+    //FRONT SIDE STYLE
+    &-picture {
+        background-size: cover;
+        height: 14rem;
+        background-blend-mode: color-burn;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+                clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+        &-1 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-sec-light), to($color-sec-dark)), url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-sec-light, $color-sec-dark), url(../img/nat-5.jpg);
+        }
+        &-2 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-light), to($color-dark)), url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, $color-light, $color-dark), url(../img/nat-6.jpg);   
+        }
+        &-3 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-ter-light), to($color-ter-dark)), url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom, $color-ter-light, $color-ter-dark), url(../img/nat-7.jpg);   
+        }
+    }
+
+    &-heading {
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 7rem;
+        line-height: 1.7;
+        right: 1rem;
+        width: 65%;
+    }
+    &-heading-span {
+        padding: .5rem 1rem;
+        -webkit-box-decoration-break: clone;
+                box-decoration-break: clone;
+
+        &-1{
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-sec-light, .85)), to(rgba($color-sec-dark, .85)));
+            background-image: linear-gradient(to right bottom, rgba($color-sec-light, .85), rgba($color-sec-dark, .85));
+        }
+        &-2{
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-light, .85)), to(rgba($color-dark, .85)));
+            background-image: linear-gradient(to right bottom, rgba($color-light, .85), rgba($color-dark, .85));
+        }
+        &-3{
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-ter-light, .85)), to(rgba($color-ter-dark, .85)));
+            background-image: linear-gradient(to right bottom, rgba($color-ter-light, .85), rgba($color-ter-dark, .85));
+        }
+    }
+
+    &-details {
+        padding: 1.5rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li{
+                text-align: center;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-light-grey;
+                }
+                
+            }
+        }
+    }
+
+    //BACK SIDE STYLE
+    &-cta {
+        @include text-positioning;
+        position: absolute;
+        width: 90%;
+        text-align: center;
+    }
+    &-price-box {
+        color: $color-white;
+        margin-bottom: 5.5rem;
+    }
+    &-price-only {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    &-price-value {
+        font-size: 4rem;
+        font-weight: 100;
+    }
+
+    @include respond(tablet) {
+        height: auto;
+        background-color: $color-white;
+        -webkit-box-shadow: $box-shadow-big;
+                box-shadow: $box-shadow-big;
+
+        &-side {
+            height: auto;
+            position: relative;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+
+            &-back {
+                -webkit-transform: rotate(0);
+                        transform: rotate(0);
+                -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        &:hover &-side-front {
+            -webkit-transform: rotate(0);
+                    transform: rotate(0);
+        }
+
+        &-details {
+            padding: 2rem;
+        }
+
+        &-cta {
+            position: relative;
+            top: 0;
+            left: 0;
+            -webkit-transform: translate(0);
+                    transform: translate(0);
+            width: 100%;
+            padding: 5rem 3rem 3rem 3rem;
+        }
+
+        &-price-box {
+            margin-bottom: 2.5rem;
+        }
+
+        &-price-value {
+            font-size: 2.5rem;
+        }
+    }
+}

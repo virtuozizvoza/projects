@@ -1,0 +1,34 @@
+/*@if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {@content}; // MIN-WIDTH FOR MOBILE ADAPTED RESPONSIVE CITES 1800px
+    }*/
+@mixin clearfix {
+    &::after{
+        content:"";
+        clear: both;
+        display: table;
+    }
+}
+@mixin text-style {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@mixin text-positioning {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {@content}; //600px
+    }
+    @if $breakpoint == tablet {
+        @media (max-width: 56.25em) {@content}; //900px
+    }
+    @if $breakpoint == laptop {
+        @media (max-width: 75em) {@content}; //1200px
+    }
+}

@@ -1,0 +1,45 @@
+.feauture-box {
+    background-color: rgba($color-white, 0.8);
+    padding: 1rem 1.5rem;
+    width: 11rem;
+    height: auto;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-box-shadow: $box-shadow-big;
+            box-shadow: $box-shadow-big;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+
+    @include respond(tablet) {
+        max-width: 50rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+   /* @include respond(tablet) {
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+    }*/
+    &-icon {
+        font-size: 4rem;
+        margin-bottom: 5px;
+        display: inline-block;
+        background-image: -webkit-gradient(linear, left top, right top, from($color-light), to($color-dark));
+        background-image: linear-gradient(to right, $color-light, $color-dark);
+        -webkit-background-clip: text;
+        line-height: 1.2;
+        color: transparent;
+        
+        @include respond(tablet) {
+            margin-bottom: 0;
+            font-size: 3rem;
+        }
+        
+    }
+    &:hover {
+        -webkit-transform: translateY(-1rem) scale(1.05);
+                transform: translateY(-1rem) scale(1.05);    
+    }
+}

@@ -1,0 +1,88 @@
+.story { 
+    width: 75%;
+    margin: 5rem auto;
+    -webkit-box-shadow: $box-shadow-big;
+            box-shadow: $box-shadow-big;
+    background-color: $color-white;
+    border-radius: 3px;
+    padding: 3rem;
+    padding-left: 6rem;
+    -webkit-transform: skewX(-12deg);
+            transform: skewX(-12deg);
+
+    @include respond(tablet) {
+        width: 100%;
+        padding: 2rem;
+        padding-left: 4rem;
+    }
+    @include respond(phone) {
+       padding: 1rem 1rem 2.5rem 1rem;
+       transform: none;
+    }
+
+    &-shape {
+        width: 10rem;
+        height: 10rem;
+        float: left;
+        -webkit-transform: translateX(-2rem) skewX(12deg);
+                transform: translateX(-2rem) skewX(12deg);
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (  -webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+        }
+
+        @include respond(phone) {
+            transform: none;
+            &:not(:last-child){
+                margin-right: 1rem;
+                }
+        }
+
+    }
+
+    &-img {
+        height: 100%;
+        transform: translateX(-3rem) scale(1.4); 
+        transition: all 0.5s;
+        backface-visibility: hidden;
+
+    }
+
+    &-text {
+        -webkit-transform: skew(12deg);
+        transform: skewX(12deg);
+
+        @include respond(phone) {
+            transform: none;
+        }
+    }
+
+    &-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &-caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    &:hover &-img {
+        transform: translateX(-3rem) scale(1);
+        filter: blur(3px) brightness(80%); 
+    }
+    }    
